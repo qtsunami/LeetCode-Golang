@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
@@ -31,22 +31,22 @@ func detectCycle(head *ListNode) *ListNode {
 
 func main() {
 	l3 := &ListNode{
-		Val: 3,
+		Val:  3,
 		Next: nil,
 	}
 
 	l2 := &ListNode{
-		Val: 2,
+		Val:  2,
 		Next: l3,
 	}
 
 	l1 := &ListNode{
-		Val: 1,
+		Val:  1,
 		Next: l2,
 	}
 
 	l0 := &ListNode{
-		Val: 0,
+		Val:  0,
 		Next: l1,
 	}
 
@@ -60,5 +60,3 @@ func main() {
 	//}
 	fmt.Println(detectCycle(l0))
 }
-
-

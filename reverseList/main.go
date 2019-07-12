@@ -11,7 +11,6 @@ import "fmt"
 //进阶:
 //你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
 
-
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -20,10 +19,10 @@ import "fmt"
  * }
  */
 
- type ListNode struct {
- 	Val int
- 	Next *ListNode
- }
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
 
 func reverseList(head *ListNode) *ListNode {
 
@@ -38,28 +37,27 @@ func reverseList(head *ListNode) *ListNode {
 
 func main() {
 	l14 := &ListNode{
-		Val: 5,
+		Val:  5,
 		Next: nil,
 	}
 
 	l13 := &ListNode{
-		Val: 4,
+		Val:  4,
 		Next: l14,
 	}
 
 	l12 := &ListNode{
-		Val: 3,
+		Val:  3,
 		Next: l13,
 	}
 	l11 := &ListNode{
-		Val: 2,
+		Val:  2,
 		Next: l12,
 	}
 	l1 := &ListNode{
-		Val: 1,
+		Val:  1,
 		Next: l11,
 	}
-
 
 	rNode := reverseList(l1)
 

@@ -11,9 +11,8 @@ import "fmt"
  * }
  */
 
-
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
@@ -30,7 +29,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	var preNode *ListNode
 	// 声明一个头结点
 	head := &ListNode{
-		Val: 0,
+		Val:  0,
 		Next: nil,
 	}
 	var val int
@@ -43,7 +42,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 			l2 = l2.Next
 		}
 		newNode = &ListNode{
-			Val: val,
+			Val:  val,
 			Next: nil,
 		}
 		// 首节点的Next是否为空
@@ -69,33 +68,32 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 
 func main() {
 	l12 := &ListNode{
-		Val: 4,
+		Val:  4,
 		Next: nil,
 	}
 	l11 := &ListNode{
-		Val: 2,
+		Val:  2,
 		Next: l12,
 	}
 	l1 := &ListNode{
-		Val: 1,
+		Val:  1,
 		Next: l11,
 	}
 
 	l22 := &ListNode{
-		Val: 4,
+		Val:  4,
 		Next: nil,
 	}
 
 	l21 := &ListNode{
-		Val: 3,
+		Val:  3,
 		Next: l22,
 	}
 
 	l2 := &ListNode{
-		Val: 1,
+		Val:  1,
 		Next: l21,
 	}
-
 
 	mergeLink := mergeTwoLists(l1, l2)
 

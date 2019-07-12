@@ -47,8 +47,8 @@ func isPalindrome(head *ListNode) bool {
 
 	len := len(setSlice)
 
-	for i := 0; i < len/2; i ++ {
-		if setSlice[i] != setSlice[len - i - 1] {
+	for i := 0; i < len/2; i++ {
+		if setSlice[i] != setSlice[len-i-1] {
 			return false
 		}
 	}
