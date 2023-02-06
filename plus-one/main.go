@@ -18,7 +18,6 @@ package main
 // 解释: 输入数组表示数字 4321。
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
