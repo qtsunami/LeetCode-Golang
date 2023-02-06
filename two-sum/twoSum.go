@@ -30,8 +30,6 @@ func twoSum(nums []int, target int) []int {
 
 	find := false
 	ret := make([]int, 2)
-	// fmt.Println(ret)
-
 	for k, v := range nums {
 		tux := target - v
 		ret[0] = k
