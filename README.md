@@ -10,3 +10,11 @@
 | 83 | [删除排序链表中的重复元素](./remove-duplicates-from-sorted-list/main.go) | 简单 | https://leetcode.cn/problems/remove-duplicates-from-sorted-list/ |
 | 136 | [只出现一次的数字](./single-number/main.go) | 简单 | https://leetcode.cn/problems/single-number/ |
 | 141 | [环形链表](./linked-list-cycle/main.go) | 简单 | https://leetcode.cn/problems/linked-list-cycle/ |
+| 206 | [反转链表](./reverse-linked-list/main.go) | 简单 | https://leetcode.cn/problems/reverse-linked-list/ |
+| 217 | [存在重复元素](./contains-duplicate/main.go) | 简单 | https://leetcode.cn/problems/contains-duplicate/ |
+| 234 | [回文链表](./palindrome-linked-list/main.go) | 简单 | https://leetcode.cn/problems/palindrome-linked-list/ |
+| 283 | [移动零](./move-zeroes/main.go) | 简单 | https://leetcode.cn/problems/move-zeroes/ |
+| 344 | [反转字符串](./reverse-string/main.go) | 简单 | https://leetcode.cn/problems/reverse-string/ |
+
+
+
