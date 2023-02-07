@@ -2,7 +2,7 @@
 > go 语言版 leetcode 解法
 
 | 序号 | 题目名称 | 难度 | 地址 | 进度 |
-|----|----|----|----|
+|----|----|----|----|----|
 | 1 | [两数之和](./two-sum/main.go)| 简单 | https://leetcode.cn/problems/two-sum/ | 已完成 |
 | 21| [合并两个有序链表](./merge-two-sorted-lists/main.go) | 简单 | https://leetcode.cn/problems/merge-two-sorted-lists/ | 已完成 |
 | 26 | [删除有序数组中的重复项](./remove-duplicates-from-sorted-array/main.go) | 简单 | https://leetcode.cn/problems/remove-duplicates-from-sorted-array/ | 已完成 |
