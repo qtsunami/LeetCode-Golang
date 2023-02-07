@@ -7,7 +7,6 @@ func rotateMartix(matrix [][]int) {
 	len := len(matrix)
 	for i := 0; i < len/2; i++ {
 		for j := 0; j < len/2; j++ {
-			fmt.Println(i, j, len-i-1, j)
 			matrix[i][j], matrix[len-i-1][j] = matrix[len-j-1][j], matrix[i][j]
 			//00          30
 			//01          20
