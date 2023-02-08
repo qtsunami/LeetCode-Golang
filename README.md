@@ -1,8 +1,8 @@
 # Leetcode-Golang
 > go 语言版 leetcode 解法
 
-| 序号 | 题目名称 | 难度 | 地址 | 进度 |
-|----|----|----|----|----|
+| 题目名称 | 难度 | 地址 | 进度 |
+|----|----|----|----|
 | [1.两数之和](./1.two-sum/main.go)| 简单 | https://leetcode.cn/problems/two-sum/ | 已完成 |
 | [9.回文数](./9.palindrome-number/main.go)| 简单 | https://leetcode.cn/problems/palindrome-number/ | 已完成 |
 | [21.合并两个有序链表](./21.merge-two-sorted-lists/main.go) | 简单 | https://leetcode.cn/problems/merge-two-sorted-lists/ | 已完成 |
