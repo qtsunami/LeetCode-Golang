@@ -5,6 +5,7 @@
 |----|----|----|----|
 | [1.两数之和](./1.two-sum/main.go)| 简单 | https://leetcode.cn/problems/two-sum/ | 已完成 |
 | [9.回文数](./9.palindrome-number/main.go)| 简单 | https://leetcode.cn/problems/palindrome-number/ | 已完成 |
+| [13.罗马数字转整数](./13.roman-to-integer/main.go)| 简单 | https://leetcode.cn/problems/roman-to-integer/ | 已完成 |
 | [21.合并两个有序链表](./21.merge-two-sorted-lists/main.go) | 简单 | https://leetcode.cn/problems/merge-two-sorted-lists/ | 已完成 |
 | [26.删除有序数组中的重复项](./26.remove-duplicates-from-sorted-array/main.go) | 简单 | https://leetcode.cn/problems/remove-duplicates-from-sorted-array/ | 已完成 |
 | [66.加一](./66.plus-one/main.go) | 简单 | https://leetcode.cn/problems/plus-one/ | 已完成 |
