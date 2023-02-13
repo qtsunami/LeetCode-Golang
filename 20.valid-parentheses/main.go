@@ -18,21 +18,7 @@ import (
 
 func main() {
 
-	s := "(){}[]"
-
-	startStr := "({["
-
-	stackArray := []string{}
-
-	for _, v := range s {
-		if strings.Contains(startStr, string(v)) {
-			stackArray = append(stackArray, string(v))
-		} else {
-
-		}
-	}
-
-	//fmt.Println(isValid("(){}[]"))
+	fmt.Println(isValid("{[]}"))
 }
 
 const (
@@ -50,19 +36,49 @@ var SymbolMap = map[string]string{
 	RightCurlyBracket:  LeftCurlyBracket,
 }
 
+type stack struct {
+	top   int
+	value []string
+}
+
 func isValid(s string) bool {
+	var st *stack = &stack{
+		top:   -1,
+		value: []string{},
+	}
+	isValid := true
 	for _, value := range s {
-		fmt.Println(string(value))
-		fmt.Println(strings.Contains(s, string(value)))
+		if strings.Contains("([{", string(value)) {
+			push(st, string(value))
+		} else {
+			v := pop(st)
+			if v != SymbolMap[string(value)] {
+				isValid = false
+				break
+			}
+		}
 	}
 
-	return false
+	return isValid && st.top == -1
 }
 
-func PushStack() {
-
+// push 入栈
+func push(st *stack, s string) {
+	st.top++
+	st.value = append(st.value, s)
 }
 
-func OutStack() {
-
+// pop 出栈
+func pop(st *stack) string {
+	if st.top == -1 {
+		return ""
+	}
+	v := st.value[st.top]
+	st.top--
+	if st.top == -1 {
+		st.value = []string{}
+	} else {
+		st.value = st.value[0 : len(st.value)-1]
+	}
+	return v
 }
