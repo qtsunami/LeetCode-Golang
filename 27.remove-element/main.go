@@ -24,18 +24,39 @@ import "fmt"
 
 func main() {
 
-	var a = []int{1, 2, 3, 4}
-	fmt.Printf("len: %d\tcap:%d\t%p\n", len(a), cap(a), a)
-	fmt.Println(removeElement(a, 1))
-	fmt.Printf("len: %d\tcap:%d\t%p\n", len(a), cap(a), a)
+	var a = []int{3, 1, 1, 3}
+	fmt.Println(removeElement1(a, 1))
+	fmt.Println(a)
 }
 
 func removeElement(nums []int, val int) int {
-	fmt.Printf("len: %d\tcap:%d\t%p\n", len(nums), cap(nums), nums)
+	newLen := 0
+	numsLen := len(nums)
+	for i := 0; i < numsLen; i++ {
+		if nums[i] == val {
+			for j := numsLen - 1; j >= 0; j-- {
+				if nums[j] != val && i < j {
+					nums[i], nums[j] = nums[j], nums[i]
+					newLen++
+					break
+				}
+			}
+		} else {
+			newLen++
+		}
+	}
+	return newLen
+}
 
-	//nums[1] = 10
-	nums = append(nums, val)
-	fmt.Printf("len: %d\tcap:%d\t%p\n", len(nums), cap(nums), nums)
-
-	return 0
+// 更加简洁的代码
+func removeElement1(nums []int, val int) int {
+	i, j := 0, 0
+	for i < len(nums) {
+		if nums[i] != val {
+			nums[j] = nums[i]
+			j++
+		}
+		i++
+	}
+	return j
 }
