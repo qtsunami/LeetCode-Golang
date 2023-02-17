@@ -25,6 +25,7 @@ func main() {
 }
 
 func searchInsert(nums []int, target int) int {
-
+	middleKey := len(nums) / 2
+	fmt.Println(middleKey)
 	return 0
 }
