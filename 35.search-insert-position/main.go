@@ -17,20 +17,29 @@ import "fmt"
 
 func main() {
 
-	var nums = []int{1, 3, 5, 6}
-	var target = 5
+	var nums = []int{1, 3, 5, 8, 11, 15}
+	//var nums = []int{1, 3}
+	var target = 2
 
 	index := searchInsert(nums, target)
 	fmt.Println(index)
 }
 
 func searchInsert(nums []int, target int) int {
-	middleKey := len(nums) / 2
-	fmt.Println(middleKey)
-	if target > nums[middleKey] {
+	n := len(nums)
+	left, right := 0, n-1
+	targetIndex := n
 
-	} else {
-
+	for left <= right {
+		mid := (right-left)>>1 + left
+		fmt.Println("right - left >> 1 + left", mid, "  ", nums[mid])
+		if target <= nums[mid] {
+			targetIndex = mid
+			right = mid - 1
+		} else {
+			left = mid + 1
+		}
 	}
-	return 0
+
+	return targetIndex
 }

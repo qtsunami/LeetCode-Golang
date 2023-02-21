@@ -11,6 +11,7 @@
 | [21.合并两个有序链表](./21.merge-two-sorted-lists/main.go)                         | 简单 | https://leetcode.cn/problems/merge-two-sorted-lists/ | 已完成 |
 | [26.删除有序数组中的重复项](./26.remove-duplicates-from-sorted-array/main.go)         | 简单 | https://leetcode.cn/problems/remove-duplicates-from-sorted-array/ | 已完成 |
 | [27.移除元素](./27.remove-element/main.go)         | 简单 | https://leetcode.cn/problems/remove-element/ | 已完成 |
+| [35.搜索插入位置](./35.search-insert-position/main.go)         | 简单 | https://leetcode.cn/problems/search-insert-position/ | 已完成 |
 | [66.加一](./66.plus-one/main.go)                                             | 简单 | https://leetcode.cn/problems/plus-one/ | 已完成 |
 | [83.删除排序链表中的重复元素](./83.remove-duplicates-from-sorted-list/main.go)         | 简单 | https://leetcode.cn/problems/remove-duplicates-from-sorted-list/ | 已完成 |
 | [122.买卖股票的最佳时机 II](./122.best-time-to-buy-and-sell-stock-ii/main.go)       | 中等 | https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/ | 已完成 |
