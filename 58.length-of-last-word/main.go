@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 // 58. 最后一个单词的长度
 // https://leetcode.cn/problems/length-of-last-word/
 // 给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。
@@ -15,10 +19,40 @@ package main
 // s 中至少存在一个单词
 
 func main() {
-
+	s := "   fly me   to   the moon"
+	fmt.Println(lengthOfLastWord(s))
 }
 
+// 解法一： 循环字符串，从第一个不为空的字符开始，到再次遇到为空的字符结束
 func lengthOfLastWord(s string) int {
-
-	return 0
+	wl := 0
+	start, end := false, false
+	i := len(s) - 1
+	for i >= 0 {
+		if string(s[i]) != " " {
+			start = true
+		}
+		if start && string(s[i]) == " " {
+			end = true
+		}
+		if start && !end {
+			wl++
+		}
+		i--
+	}
+	return wl
 }
+
+// 解法二： 将字符串根据" " 分割，获取第一个不为空的元素，计算其长度
+//func lengthOfLastWord(s string) int {
+//	wl := 0
+//	sa := strings.Split(s, " ")
+//	for i := len(sa) - 1; i >= 0; i-- {
+//		fmt.Println(len(sa[i]), "  ", sa[i], "  ", sa[i] == "")
+//		if sa[i] != "" {
+//			wl = len(sa[i])
+//			break
+//		}
+//	}
+//	return wl
+//}
